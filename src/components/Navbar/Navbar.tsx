@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from './Navbar.module.css';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,14 +23,17 @@ export default function Navbar() {
           Portfolio<span className={styles.dot}>.</span>
         </Link>
         
-        {/* Desktop Links */}
-        <ul className={styles.navLinks}>
-          <li><Link href="#about">About</Link></li>
-          <li><Link href="#projects">Projects</Link></li>
-          <li><Link href="#contact">Contact</Link></li>
-        </ul>
+        <div className={styles.navRight}>
+          {/* Desktop Links */}
+          <ul className={styles.navLinks}>
+            <li><Link href="#about">About</Link></li>
+            <li><Link href="#projects">Projects</Link></li>
+            <li><Link href="#contact">Contact</Link></li>
+          </ul>
 
-        {/* Hamburger Icon */}
+          <ThemeToggle />
+        </div>
+
         <button 
           className={`${styles.hamburger} ${isOpen ? styles.open : ''}`} 
           onClick={toggleMenu}

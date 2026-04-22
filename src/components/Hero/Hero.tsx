@@ -20,13 +20,13 @@ export default function Hero() {
             />
           </div>
           <div className={`${styles.badge} animate-fade-in`} style={{ animationDelay: '0.1s' }}>
-            Web Development | Android Development
+            Web Development | Frontend & Backend Developer
           </div>
           <h1 className={`${styles.title} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
             Hi, I'm <span className="text-gradient">Muh. Irsyad Dwi Kurniawan</span>
           </h1>
           <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
-            A passionate developer specializing in modern web and mobile applications. Let's craft elegant and performant digital experiences.
+            A passionate developer focused on building modern web applications. Let's craft elegant and performant digital experiences.
           </p>
           <div className={`${styles.actions} animate-fade-in`} style={{ animationDelay: '0.4s' }}>
             <Link href="#projects" className={styles.primaryBtn}>

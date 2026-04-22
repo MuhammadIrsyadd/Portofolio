@@ -43,8 +43,8 @@
 .badge {
   display: inline-flex;
   padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -91,7 +91,7 @@
 
 .primaryBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px -10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 20px -10px var(--glass-border);
   color: var(--bg-primary);
 }
 
@@ -102,7 +102,7 @@
 }
 
 .secondaryBtn:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--glass-bg);
 }
 
 /* Background Blobs */
