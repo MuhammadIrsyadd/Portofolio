@@ -1,5 +1,6 @@
 .projectsSection {
   padding: 8rem 0;
+  background-color: var(--bg-secondary);
 }
 
 .projectsContainer {
@@ -34,7 +35,7 @@
 }
 
 .projectCard {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 2rem 1.75rem;
